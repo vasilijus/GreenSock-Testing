@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+.backgr { background-color:#ccc; }
+.header {     font-size: 3rem;    text-align: center;    padding: 40px 0;}
+.parag {     font-size: 2rem;    text-align: center;    padding: 0px 0;    color: #00008a;}
+.botline {     width: 80%;    border-top: 2px black solid;  margin: 0px auto; padding:10px; }
+.listed p { font-weight:bold; font-size:1.5rem;}
+</style>
+</head>
+<body>
+<svg height="210" width="500">
+  <polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1" />
+</svg>
+<div class="listed" style="text-align:center;">
+	<p>1 Introduction</p>
+	<p>2 About the</p>
+	<p>3 What they do</p>
+	<p>4 Community</p>
+	<p>5 Join the Fun</p>
+	<p>6 Contact Us</p>
+</div>
+<hr />
+<div class="backgr">
+<h1 class="header">Hello world</h1>
+<p class="parag">Nice to be alive</p>
+<div class="botline"></div>
+</div>
+<hr />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+<script>
+	TweenMax.staggerFrom('p', 1, {opacity:0,scale:.5,y:-30,x:-5,ease:Back.easeOut.config(3)}, .5);
+	/*
+	TweenMax.from('.header', 1, {scale:0.5,delay:1});
+	TweenMax.from('.parag', 1, {scale:2, delay:1.5});
+	TweenMax.from('.backgr', 1, {scale:0});
+	TweenMax.from('.botline', 1, {scale: 2});
+	*/
+	
+	var myTimeLine = new TimelineMax();
+	
+</script>
+
+</body>
+</html>
